@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db: 
+    image: postgres 
+    environment: 
+      POSTGRES_PASSWORD: node4db
+    ports:
+      - 5432:5432 
+    volumes:
+      - node4db:/var/lib/postgresql/data 
+volumes:
+  node4db: 
